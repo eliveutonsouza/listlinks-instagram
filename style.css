@@ -1,0 +1,127 @@
+/** RESET ============*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+:root {
+ --background: rgb(231, 231, 231);
+ --text: rgb(8, 8, 8);
+ --button: #63DFDF;
+ --white: #fff;
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+body, input, textarea, button {
+    font: 400 1rem "Lato", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/** HEADER ============*/
+
+header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 8.5rem;
+    height: 8.5rem;
+    border: 2px solid #63DFDF;
+}
+
+header p {
+    color: rgba(0, 0, 0, 0.883);
+    font-size: 1.2rem;
+
+}
+
+/** MAIN ============*/
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+.card-btn {
+    background-color: rgb(245, 245, 245);
+    border: 2px solid #63DFDF;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 30px;
+
+    color: rgba(0, 0, 0, 0.883);
+    font-size: 1.25rem;
+    font-weight: 600;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card-btn img {
+    width: 3rem;
+}
+
+.card-btn button {
+    width: 32%;
+    height: 3rem;
+
+    border: 0;
+    border-radius: 5px;
+
+    background: var(--button);
+    color: var(--white);
+
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    transition: background-color 0.2s;
+}
+
+.card-btn button:hover {
+    background: var(--white);
+    color: var(--button);
+    border: 1.8px solid var(--button);
+}
+
+/** FOOTER ============*/
+
+footer {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+footer a {
+    color: #004e4e;
+}
